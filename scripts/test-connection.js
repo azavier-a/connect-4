@@ -1,4 +1,13 @@
-const SERVER_URL = 'https://connect-4.xyz/connect-4-server/index.php';
+
+const DEV_MODE = false;
+
+
+const DEV_SERVER = 'http://localhost:5055';
+const PUB_SERVER = 'https://connect-4.xyz';
+
+
+
+const SERVER_URL = (DEV_MODE? DEV_SERVER:PUB_SERVER) +'/connect-4-server/index.php'; 
 
 const the_button = document.getElementById("the-button");
 the_button.onmousedown = inc_press_count;
