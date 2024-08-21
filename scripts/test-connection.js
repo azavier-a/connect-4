@@ -1,4 +1,4 @@
-const SERVER_URL = 'http://50.4.236.11/connect-4-server/index.php';
+const SERVER_URL = 'https://connect-4.xyz/connect-4-server/index.php';
 
 const the_button = document.getElementById("the-button");
 the_button.onmousedown = inc_press_count;
