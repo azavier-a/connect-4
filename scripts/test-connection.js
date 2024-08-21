@@ -10,6 +10,8 @@ function get_press_count() {
 
     request.open('GET', SERVER_URL+ "?action=get_press_count");
     request.send();
+
+    setTimeout(get_press_count, 500);
 }
 window.onload = get_press_count;
 
